@@ -3582,6 +3582,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 498170973418331430, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -85.4
+      objectReference: {fileID: 0}
     - target: {fileID: 591240436427354586, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -3615,6 +3619,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 686286107829047635, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: grappleSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 686286107829047635, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: summonCooldown
       value: 10
       objectReference: {fileID: 0}
@@ -3622,6 +3630,10 @@ PrefabInstance:
       propertyPath: summonPosition
       value: 
       objectReference: {fileID: 263262318}
+    - target: {fileID: 686286107829047635, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: grappleDuration
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 686286107829047635, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: dashMovementCooldown
       value: 5
@@ -3665,6 +3677,14 @@ PrefabInstance:
     - target: {fileID: 1306947028262202071, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519406143777413463, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519406143777413463, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1789690226650416449, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: m_SortingLayer

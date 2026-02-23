@@ -7517,17 +7517,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   manager: {fileID: 0}
+  summonPosition: {fileID: 0}
   targetDistance: 3
   timeInIdle: 0
   stunTime: 5
   stunInterval: 40
   damage: 5
   damageCooldown: 1
+  dashMovementCooldown: 0
+  dashDistance: 0
+  dashSpeed: 0
   grappleTargetDistance: 7
   grappleDuration: 0.5
   grappleSpeed: 10
   dashCD: 0
   dashRange: 0
+  summonCooldown: 0
+  numEnemies: 0
 --- !u!1 &6769781680221541979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,9 +8031,9 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1105041087
+  m_SortingLayer: 5
+  m_SortingOrder: 12
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}

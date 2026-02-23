@@ -29,10 +29,10 @@ public class BossIdleState : State
         if (curTime > bossContext.TimeInIdle)
         {
             float randomChance = Random.Range(0f, 1f);
-            // if (bossContext.CurrentStage >= 2 && bossContext.GrappleInRange())
-            // {
-            //     SwitchState(new BossGrappleState(bossContext));
-            // } else 
+            if (bossContext.CurrentStage >= 2 && randomChance > 0.7f && bossContext.GrappleInRange())
+            {
+                SwitchState(new BossGrappleState(bossContext));
+            } else 
             if (bossContext.CurrentStage == 2 && bossContext.CanSummon())
             {
                 bossContext.NextAttack = 2;

@@ -29,7 +29,6 @@ public class StageTwo : State
     }
     public override void EnterState()
     {
-        bossContext.GrapplingFinished = 1;
     }
     public override void UpdateState()
     {
