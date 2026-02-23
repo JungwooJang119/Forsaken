@@ -14,43 +14,37 @@ public class CameraController1 : MonoBehaviour
         public Transform rigRoot;
         public Camera dummyCamera;
 
-        [NonSerialized] public float x;
-        [NonSerialized] public Vector3 localOffset;
-        [NonSerialized] public Vector3 worldPos;
-        [NonSerialized] public float orthoSize;
-        [NonSerialized] public CameraRig.SpaceMode spaceMode;
+        public float x;
+        public Vector3 localOffset;
+        public Vector3 worldPos;
+        public float orthoSize;
+        public CameraRig.SpaceMode spaceMode;
     }
 
-    [Header("References")]
-    [SerializeField] private Transform player;
-    [SerializeField] private Camera runtimeCamera;
+    [Header("Refs")]
+    public Transform player;
+    public Camera runtimeCamera;
 
     [Header("Bounds")]
-    [SerializeField] private bool clampToExtremeRigs = true;
-
+    public bool clampToExtremeRigs = true;
 
     [Header("Rig discovery")]
-    [SerializeField] private bool autoFindRigs = true;
-    [SerializeField] private List<CameraRig> rigsManual = new();
+    public bool AutomaticallyDiscoverRigs = true;
+    public List<CameraRig> ManuallySetRigs = new();
 
     [Header("Smoothing")]
-    [Tooltip("0 = instant. Higher = smoother.")]
-    [SerializeField] private float positionSmoothTimeX = 0.10f;
-
-    [Tooltip("0 = instant. Higher = smoother.")]
-    [SerializeField] private float positionSmoothTimeY = 0.10f;
-
-    [Tooltip("0 = instant. Higher = smoother.")]
-    [SerializeField] private float sizeSmoothTime = 0.10f;
+    public float SmoothingX = 0.10f;
+    public float SmoothingY = 0.10f;
+    public float CameraZoomSmoothing = 0.10f;
 
     [Header("Runtime Z")]
-    [SerializeField] private float cameraZ = 0f;
+    public float CameraOffsetZ = 0f;
 
-    private readonly List<RigData> _rigs = new();
+    private readonly List<RigData> cameraRigs = new();
 
-    private float _velX;
-    private float _velY;
-    private float _sizeVel;
+    private float velocityX;
+    private float velocityY;
+    private float velocityZoom;
 
     public float PrevPlayerX { get; private set; }
     public float CurrPlayerX { get; private set; }
@@ -71,10 +65,10 @@ public class CameraController1 : MonoBehaviour
 
         if (!runtimeCamera) runtimeCamera = Camera.main;
 
-        if (cameraZ == 0f && runtimeCamera)
-            cameraZ = runtimeCamera.transform.position.z;
+        if (CameraOffsetZ == 0f && runtimeCamera)
+            CameraOffsetZ = runtimeCamera.transform.position.z;
 
-        RebuildRigCache();
+        RebuildCache();
 
         if (player) PrevPlayerX = CurrPlayerX = player.position.x;
     }
@@ -88,41 +82,57 @@ public class CameraController1 : MonoBehaviour
     {
         if (!runtimeCamera) runtimeCamera = GetComponentInChildren<Camera>();
         if (Application.isPlaying) return;
-        RebuildRigCache();
+        RebuildCache();
     }
+
+    private int FindFirstRigRightOfX(float x)
+    {
+        for (int i = 0; i < cameraRigs.Count; i++)
+            if (cameraRigs[i].x >= x) return i;
+
+        return cameraRigs.Count;
+    }
+
+
 
     private void LateUpdate()
     {
         if (!player || !runtimeCamera) return;
-        if (_rigs.Count == 0) return;
+        if (cameraRigs.Count == 0) return;
 
         PrevPlayerX = CurrPlayerX;
         CurrPlayerX = player.position.x;
 
-        ApplySample(CurrPlayerX);
+        ApplyRigSample(CurrPlayerX);
     }
-    private void GetBounds(out Vector3 leftPos, out float leftOrtho, out Vector3 rightPos, out float rightOrtho)
+    private void GetCameraBounds(out Vector3 leftPosition, out float leftOrthographic, out Vector3 rightPosition, out float rightOrthographic)
     {
-        var left = _rigs[0];
-        var right = _rigs[^1];
-
-        leftPos = EvaluateRigPose(left);
-        rightPos = EvaluateRigPose(right);
-
-        leftOrtho = left.orthoSize;
-        rightOrtho = right.orthoSize;
+        var left = cameraRigs[0];
+        var right = cameraRigs[^1];
+        leftPosition = EvaluateRigPose(left);
+        rightPosition = EvaluateRigPose(right);
+        leftOrthographic = left.orthoSize;
+        rightOrthographic = right.orthoSize;
     }
 
-    public void RebuildRigCache()
+
+
+
+    public void RebuildCache()
     {
-        _rigs.Clear();
+        cameraRigs.Clear();
 
         List<CameraRig> found = new();
 
-        if (autoFindRigs)
+
+
+        if (AutomaticallyDiscoverRigs)
             found.AddRange(FindObjectsByType<CameraRig>(FindObjectsSortMode.InstanceID));
         else
-            found.AddRange(rigsManual);
+            found.AddRange(ManuallySetRigs);
+
+
+
 
         foreach (var rig in found)
         {
@@ -130,6 +140,8 @@ public class CameraController1 : MonoBehaviour
 
             var dummy = rig.dummyCamera ? rig.dummyCamera : rig.GetComponentInChildren<Camera>(true);
             if (!dummy) continue;
+
+
 
             var d = new RigData
             {
@@ -139,11 +151,15 @@ public class CameraController1 : MonoBehaviour
             };
 
             CacheRig(d);
-            _rigs.Add(d);
+            cameraRigs.Add(d);
         }
 
-        _rigs.Sort((a, b) => a.x.CompareTo(b.x));
+        cameraRigs.Sort((a, b) => a.x.CompareTo(b.x));
     }
+
+
+
+
 
     private void CacheRig(RigData d)
     {
@@ -156,20 +172,20 @@ public class CameraController1 : MonoBehaviour
         d.spaceMode = d.rig.spaceMode;
     }
 
-    private void ApplySample(float playerX)
+    private void ApplyRigSample(float playerX)
     {
-        for (int i = 0; i < _rigs.Count; i++)
-            CacheRig(_rigs[i]);
+        for (int i = 0; i < cameraRigs.Count; i++)
+            CacheRig(cameraRigs[i]);
 
-        Vector3 desiredPos;
-        float desiredOrtho;
+        Vector3 desiredPosition = new();
+        float desiredOrthographic;
 
-        if (_rigs.Count == 1)
+        if (cameraRigs.Count == 1)
         {
-            var r = _rigs[0];
-            desiredPos = EvaluateRigPose(r);
-            desiredOrtho = r.orthoSize;
-            ApplyPose(ClampIfNeeded(desiredPos, desiredOrtho, out desiredOrtho), desiredOrtho);
+            var r = cameraRigs[0];
+            desiredPosition = EvaluateRigPose(r);
+            desiredOrthographic = r.orthoSize;
+            ApplyPose(VectorContextClamp(desiredPosition, desiredOrthographic, out desiredOrthographic), desiredOrthographic);
             return;
         }
 
@@ -177,51 +193,48 @@ public class CameraController1 : MonoBehaviour
 
         if (right <= 0)
         {
-            var r = _rigs[0];
-            desiredPos = EvaluateRigPose(r);
-            desiredOrtho = r.orthoSize;
-            ApplyPose(ClampIfNeeded(desiredPos, desiredOrtho, out desiredOrtho), desiredOrtho);
+            var r = cameraRigs[0];
+            desiredPosition = EvaluateRigPose(r);
+            desiredOrthographic = r.orthoSize;
+            ApplyPose(VectorContextClamp(desiredPosition, desiredOrthographic, out desiredOrthographic), desiredOrthographic);
             return;
         }
 
-        if (right >= _rigs.Count)
+        if (right >= cameraRigs.Count)
         {
-            var r = _rigs[^1];
-            desiredPos = EvaluateRigPose(r);
-            desiredOrtho = r.orthoSize;
-            ApplyPose(ClampIfNeeded(desiredPos, desiredOrtho, out desiredOrtho), desiredOrtho);
+            var r = cameraRigs[^1];
+            desiredPosition = EvaluateRigPose(r);
+            desiredOrthographic = r.orthoSize;
+            ApplyPose(VectorContextClamp(desiredPosition, desiredOrthographic, out desiredOrthographic), desiredOrthographic);
             return;
         }
 
-        var a = _rigs[right - 1];
-        var b = _rigs[right];
+        var a = cameraRigs[right - 1];
+        var b = cameraRigs[right];
 
         float t = Mathf.InverseLerp(a.x, b.x, playerX);
 
         Vector3 posA = EvaluateRigPose(a);
         Vector3 posB = EvaluateRigPose(b);
 
-        desiredPos = Vector3.LerpUnclamped(posA, posB, t);
-        desiredOrtho = Mathf.LerpUnclamped(a.orthoSize, b.orthoSize, t);
+        desiredPosition = Vector3.LerpUnclamped(posA, posB, t);
+        desiredOrthographic = Mathf.LerpUnclamped(a.orthoSize, b.orthoSize, t);
 
-        desiredPos = ClampIfNeeded(desiredPos, desiredOrtho, out desiredOrtho);
-        ApplyPose(desiredPos, desiredOrtho);
+        desiredPosition = VectorContextClamp(desiredPosition, desiredOrthographic, out desiredOrthographic);
+        ApplyPose(desiredPosition, desiredOrthographic);
     }
 
-    private Vector3 ClampIfNeeded(Vector3 desiredPos, float desiredOrtho, out float clampedOrtho)
+    private Vector3 VectorContextClamp(Vector3 desiredPostion, float desiredOrthographic, out float clampedOrthographic)
     {
-        clampedOrtho = desiredOrtho;
-        if (!clampToExtremeRigs || _rigs.Count == 0) return desiredPos;
+        clampedOrthographic = desiredOrthographic;
+        if (!clampToExtremeRigs || cameraRigs.Count == 0) return desiredPostion;
 
-        GetBounds(out var leftPos, out var leftOrtho, out var rightPos, out var rightOrtho);
+        GetCameraBounds(out var leftPos, out var leftOrtho, out var rightPos, out var rightOrtho);
 
-        // Clamp X between extreme rig poses
-        desiredPos.x = Mathf.Clamp(desiredPos.x, leftPos.x, rightPos.x);
+        desiredPostion.x = Mathf.Clamp(desiredPostion.x, leftPos.x, rightPos.x);
+        clampedOrthographic = Mathf.Clamp(desiredOrthographic, Mathf.Min(leftOrtho, rightOrtho), Mathf.Max(leftOrtho, rightOrtho));
 
-        // Optional: clamp zoom between extreme rig zooms (prevents “expanding past” the edge setups)
-        clampedOrtho = Mathf.Clamp(desiredOrtho, Mathf.Min(leftOrtho, rightOrtho), Mathf.Max(leftOrtho, rightOrtho));
-
-        return desiredPos;
+        return desiredPostion;
     }
 
 
@@ -231,7 +244,7 @@ public class CameraController1 : MonoBehaviour
             ? r.worldPos
             : player.position + r.localOffset;
 
-        desired.z = cameraZ;
+        desired.z = CameraOffsetZ;
         return desired;
     }
 
@@ -239,29 +252,23 @@ public class CameraController1 : MonoBehaviour
     {
         Vector3 current = runtimeCamera.transform.position;
 
-        float x = positionSmoothTimeX <= 0f
+        float x = SmoothingX <= 0f
             ? desiredPos.x
-            : Mathf.SmoothDamp(current.x, desiredPos.x, ref _velX, positionSmoothTimeX);
+            : Mathf.SmoothDamp(current.x, desiredPos.x, ref velocityX, SmoothingX);
 
-        float y = positionSmoothTimeY <= 0f
+        float y = SmoothingY <= 0f
             ? desiredPos.y
-            : Mathf.SmoothDamp(current.y, desiredPos.y, ref _velY, positionSmoothTimeY);
+            : Mathf.SmoothDamp(current.y, desiredPos.y, ref velocityY, SmoothingY);
 
-        runtimeCamera.transform.position = new Vector3(x, y, cameraZ);
+        runtimeCamera.transform.position = new Vector3(x, y, CameraOffsetZ);
 
         if (!runtimeCamera.orthographic) return;
 
         runtimeCamera.orthographicSize =
-            sizeSmoothTime <= 0f
+            CameraZoomSmoothing <= 0f
                 ? desiredOrtho
-                : Mathf.SmoothDamp(runtimeCamera.orthographicSize, desiredOrtho, ref _sizeVel, sizeSmoothTime);
+                : Mathf.SmoothDamp(runtimeCamera.orthographicSize, desiredOrtho, ref velocityZoom, CameraZoomSmoothing);
     }
 
-    private int FindFirstRigRightOfX(float x)
-    {
-        for (int i = 0; i < _rigs.Count; i++)
-            if (_rigs[i].x >= x) return i;
 
-        return _rigs.Count;
-    }
 }
