@@ -103,6 +103,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     public bool DashFinished {get {return dashFinished; } set {dashFinished = value;}}
     public bool IsDashing {get {return isDashing; } set {isDashing = value;}}
     public bool CanDash {get {return canDash;}}
+    public bool ShootUnlocked {get {return shootUnlocked;}}
     public bool HurtFinished {get {return hurtFinished; } set {hurtFinished = value;}}
     public bool Grounded {get {return grounded;} set {grounded = value;}}
     public Vector2 CurrentMovementInput {get {return currentMovementInput;}}
@@ -367,7 +368,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
         }
     }
 
-    void UpdateHealthText()
+    public void UpdateHealthText()
     {
         healthBar.text = "Health: " + Health.ToString();
     }

@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     private bool gameOver = false;
     private BossStateMachine bossStateMachine;
     private PlayerStateMachine playerStateMachine;
+    private SaveData saveData;
 
     public int CurrentStage {get {return currentStage;} set {currentStage = value;}}
     public int NumStages {get {return numStages;}}
@@ -34,6 +35,21 @@ public class GameManager : MonoBehaviour
         bossStateMachine = boss.GetComponent<BossStateMachine>();
         playerStateMachine = player.GetComponent<PlayerStateMachine>();
         SetTimeScale(1f);
+
+        saveData = SaveManager.Load();
+        currentStage = saveData.currentStage;
+        if (saveData.shootUnlocked) UnlockPlayerAbility(2);
+        if (saveData.canDash) UnlockPlayerAbility(3);
+
+        if (string.IsNullOrEmpty(saveData.lastSaveSpotID)) return;
+        SaveSpot[] saveSpots = FindObjectsByType<SaveSpot>(FindObjectsSortMode.None);
+        foreach (SaveSpot spot in saveSpots) {
+            if (spot.SpotID == saveData.lastSaveSpotID) {
+                playerStateMachine.transform.position = new Vector3(spot.transform.position.x, playerStateMachine.transform.position.y, playerStateMachine.transform.position.z);
+                playerStateMachine.Grounded = true;
+                break;
+            }
+        }
     }
 
     public void BeginBattle()
@@ -91,6 +107,14 @@ public class GameManager : MonoBehaviour
     public static void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SaveGame(string spotID){
+        saveData.currentStage = currentStage;
+        saveData.shootUnlocked = playerStateMachine.ShootUnlocked;
+        saveData.canDash = playerStateMachine.CanDash;
+        saveData.lastSaveSpotID = spotID;
+        SaveManager.Save(saveData);
     }
 
 }
