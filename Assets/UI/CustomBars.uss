@@ -20,13 +20,13 @@
     border: 6px solid #080809;
     transform: matrix(1, -0.1, 0.08, 1, 0, 0);
     
-    opacity: 0;
+    opacity: 1;
     overflow: hidden;
 }
 
 .custom-bar__fill {
     height: 50%;
-    width: 100%
+    width: 100%;
     background-color: rgb(108, 0, 2);
 }
 
