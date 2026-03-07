@@ -27,8 +27,8 @@ public class PlayerStateMachine : StateMachine, IDamageable
     private Vector2 currentMovementInput;
     private bool isMovementPressed;
     private bool canMove = true;
-    private bool shootUnlocked = false;
-    private bool canDash = false;
+    private bool shootUnlocked = true;
+    private bool canDash = true;
     private bool isRunPressed;
     private bool isJumpPressed;
     private bool isHitPressed;

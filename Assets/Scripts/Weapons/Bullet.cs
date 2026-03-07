@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         string layer = LayerMask.LayerToName(other.gameObject.layer);
-        if (layer == "Enemies")
+        if (layer == "Enemies" || other.gameObject.CompareTag("Breakable"))
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)

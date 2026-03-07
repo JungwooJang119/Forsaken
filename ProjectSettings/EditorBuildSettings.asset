@@ -20,9 +20,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Scenes/Main_Menu.unity
     guid: 4cdf4fd06e7e28b489fc72606c6f7f13
-  - enabled: 1
+  - enabled: 0
     path: Assets/Final Scenes/Level1.unity
     guid: 8666f2c5e7d1a424b8d25b09dcb69102
+  - enabled: 1
+    path: Assets/Final Scenes/Level1.1.unity
+    guid: bc4a24c4a76ce504b9a5f607792f85d0
+  - enabled: 1
+    path: Assets/Final Scenes/Level1.2.unity
+    guid: 813c14ccd0156f64a89a7943a4822b76
+  - enabled: 1
+    path: Assets/Final Scenes/Level1.3.unity
+    guid: 800baba4653a1d142a59973846f6dcc2
+  - enabled: 1
+    path: Assets/Final Scenes/Level2.unity
+    guid: 344667680099ef442807a2ab34883b3a
+  - enabled: 1
+    path: Assets/Final Scenes/Level3.unity
+    guid: 1312b061e0d56204aad19256cd40695a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 60bac20b8503b5b4da5c1ae9db39b948, type: 3}
   m_UseUCBPForAssetBundles: 0

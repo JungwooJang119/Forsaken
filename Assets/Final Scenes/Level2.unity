@@ -5776,6 +5776,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 732192994}
     - target: {fileID: 6323485789337428041, guid: 86b25b0a86760dd4ca66643ebe4f2c65, type: 3}
+      propertyPath: spotID
+      value: spot_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323485789337428041, guid: 86b25b0a86760dd4ca66643ebe4f2c65, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 1498093552}

@@ -9,12 +9,14 @@ public class MainMenuManager : MonoBehaviour
     public void StartGame()
     {
         SaveManager.DeleteData();
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level1.1");
     }
 
     public void ContinueGame()
     {
-        SceneManager.LoadScene("Level1");
+        SaveData saveData = SaveManager.Load();
+        int sceneIndex = saveData.currentSceneIndex;
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void QuitGame()

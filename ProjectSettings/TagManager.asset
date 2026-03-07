@@ -10,6 +10,7 @@ TagManager:
   - Ground
   - Note
   - HUE Weapon
+  - Breakable
   layers:
   - Default
   - TransparentFX
