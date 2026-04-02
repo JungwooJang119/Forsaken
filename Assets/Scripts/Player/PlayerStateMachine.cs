@@ -10,6 +10,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     [SerializeField] private  float runSpeed = 7f;
     [SerializeField] private float jumpForce = 20f;
     [SerializeField] private float slashForce = 30f;
+    [SerializeField] private float recoilForce = 30f;
     [SerializeField] private float dashSpeed = 15f;
     [SerializeField] private float dashDistance = 5f;
     [SerializeField] private float parryTiming = 2.5f;
@@ -191,7 +192,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
 
     protected override void FaceMovement()
     {
-        if (IsMovementPressed)
+        if (Mathf.Abs(rb.linearVelocity.x) > 0.05f)
         {
             sprite.localScale = new Vector3(Mathf.Sign(rb.linearVelocity.x), 1, 1);
         }
@@ -201,6 +202,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
         if (isBlocking && canParry)
         {
             StartParry();
+            ApplyRecoil(new Vector3(sprite.localScale.x * -1 * recoilForce, 0f, 0f));
             return;
         }
         if (Time.time > canTakeDamage && !IsParrying)
@@ -229,6 +231,11 @@ public class PlayerStateMachine : StateMachine, IDamageable
             canDash = true;
             Debug.Log("you can now shoot! press shift to launch yourself!");
         }
+    }
+
+    public void ApplyRecoil(Vector3 force)
+    {
+        rb.AddForce(force, ForceMode2D.Impulse);
     }
     #endregion
     

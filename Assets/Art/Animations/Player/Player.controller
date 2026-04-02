@@ -648,6 +648,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -6538811209097011408}
     m_Position: {x: -890, y: 540, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 3762672325835738014}
+    m_Position: {x: -855, y: 605, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 6719382524396462513}
@@ -714,6 +717,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &3762672325835738014
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Player_Dodge
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: ab2cd21b96ae7cb4499f972af840674d, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &3814715062160372081
 AnimatorState:
   serializedVersion: 6

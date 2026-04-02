@@ -37,20 +37,16 @@ public class PlayerShootState : State
         if (playerContext.IsHurt)
         {
             SwitchState(new PlayerHurtState(playerContext));
-        }
-        else if (!playerContext.ShootFinished)
+        } else if (playerContext.IsRunPressed)
         {
-            return;
-        }
-        playerContext.ShootFinished = false; 
-        if (playerContext.IsRunPressed)
-        {
+            playerContext.ShootFinished = false; 
             SwitchState(new PlayerDashState(playerContext));
         } else if (playerContext.IsMovementPressed)
-        {   
+        {   playerContext.ShootFinished = false; 
             SwitchState(new PlayerWalkState(playerContext));
-        } else
+        } else if (playerContext.ShootFinished)
         {
+            playerContext.ShootFinished = false; 
             SwitchState(new PlayerIdleState(playerContext));
         }
     }
