@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 7359ee7bdee528542ae554007d71659d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3945426723161466100
+    second: sewer_asset_sheet_0
+  - first:
+      213: 8234827151804172065
+    second: sewer_asset_sheet_1
+  - first:
+      213: 8914576923739860372
+    second: sewer_asset_sheet_2
+  - first:
+      213: -9217468899052234133
+    second: sewer_asset_sheet_3
+  - first:
+      213: -228606244081147723
+    second: sewer_asset_sheet_4
+  - first:
+      213: -2717896212522068386
+    second: sewer_asset_sheet_5
+  - first:
+      213: -5924572286784108061
+    second: sewer_asset_sheet_6
+  - first:
+      213: -7814013619186744617
+    second: sewer_asset_sheet_7
+  - first:
+      213: 3238648812376256622
+    second: sewer_asset_sheet_8
+  - first:
+      213: -7460143438635530544
+    second: sewer_asset_sheet_9
+  - first:
+      213: 2468765923765024414
+    second: sewer_asset_sheet_10
+  - first:
+      213: -8790304805909903306
+    second: sewer_asset_sheet_11
+  - first:
+      213: -1762745502885798878
+    second: sewer_asset_sheet_12
+  - first:
+      213: -89315503545792186
+    second: sewer_asset_sheet_13
+  - first:
+      213: -3775041807988325971
+    second: sewer_asset_sheet_14
+  - first:
+      213: 4902515866327526374
+    second: sewer_asset_sheet_15
+  - first:
+      213: 5610230566731255572
+    second: sewer_asset_sheet_16
+  - first:
+      213: 8453413235955527745
+    second: sewer_asset_sheet_17
+  - first:
+      213: 5861528942019707602
+    second: sewer_asset_sheet_18
+  - first:
+      213: -5172129478493455675
+    second: sewer_asset_sheet_19
+  - first:
+      213: -2554939271166336231
+    second: sewer_asset_sheet_20
+  - first:
+      213: -8100572288851433603
+    second: sewer_asset_sheet_21
+  - first:
+      213: -4138127235449841489
+    second: sewer_asset_sheet_22
+  - first:
+      213: -190175934103722802
+    second: sewer_asset_sheet_23
+  - first:
+      213: 7413781506765671793
+    second: sewer_asset_sheet_24
+  - first:
+      213: 7046765595310760739
+    second: sewer_asset_sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sewer_asset_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 938
+        width: 105
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b90ae8c470f39c0800000000000000
+      internalID: -3945426723161466100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 799
+        width: 270
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12787022aabf74270800000000000000
+      internalID: 8234827151804172065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 885
+        width: 103
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49da86e0b70f6bb70800000000000000
+      internalID: 8914576923739860372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1006
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ad7cf5fd8f41080800000000000000
+      internalID: -9217468899052234133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1004
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b06b1c05d3d3dcf0800000000000000
+      internalID: -228606244081147723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1019
+        width: 306
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e561e347bc7184ad0800000000000000
+      internalID: -2717896212522068386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 852
+        width: 369
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e90c1815e0b7cda0800000000000000
+      internalID: -5924572286784108061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 964
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d24f46830c0f8390800000000000000
+      internalID: -7814013619186744617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 965
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e607ded8fedf1fc20800000000000000
+      internalID: 3238648812376256622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 964
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d60bae611f387890800000000000000
+      internalID: -7460143438635530544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 950
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e967a9f0781d24220800000000000000
+      internalID: 2468765923765024414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 682
+        width: 22
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638c4502a50920680800000000000000
+      internalID: -8790304805909903306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 776
+        width: 369
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c1317fd487987e0800000000000000
+      internalID: -1762745502885798878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 898
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c732d500b2cef0800000000000000
+      internalID: -89315503545792186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 319
+        width: 397
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da18b960a7b5c9bc0800000000000000
+      internalID: -3775041807988325971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 341
+        width: 391
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb2b2ea43c390440800000000000000
+      internalID: 4902515866327526374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 227
+        width: 55
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f0e06e9fa8bdd40800000000000000
+      internalID: 5610230566731255572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 210
+        width: 394
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140f6bccc8e805570800000000000000
+      internalID: 8453413235955527745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 209
+        width: 583
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d281cd5485585150800000000000000
+      internalID: 5861528942019707602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 417
+        width: 131
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca321674a7e838b0800000000000000
+      internalID: -5172129478493455675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 371
+        width: 188
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9136f6ff4480b8cd0800000000000000
+      internalID: -2554939271166336231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 55
+        width: 503
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7723a50c6cf49f80800000000000000
+      internalID: -8100572288851433603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 227
+        width: 48
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa894af343b6296c0800000000000000
+      internalID: -4138127235449841489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 204
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec46beadefb5c5df0800000000000000
+      internalID: -190175934103722802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 99
+        width: 440
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dc021200b03e660800000000000000
+      internalID: 7413781506765671793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sewer_asset_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 68
+        width: 593
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32321fb39f32bc160800000000000000
+      internalID: 7046765595310760739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sewer_asset_sheet_0: -3945426723161466100
+      sewer_asset_sheet_1: 8234827151804172065
+      sewer_asset_sheet_10: 2468765923765024414
+      sewer_asset_sheet_11: -8790304805909903306
+      sewer_asset_sheet_12: -1762745502885798878
+      sewer_asset_sheet_13: -89315503545792186
+      sewer_asset_sheet_14: -3775041807988325971
+      sewer_asset_sheet_15: 4902515866327526374
+      sewer_asset_sheet_16: 5610230566731255572
+      sewer_asset_sheet_17: 8453413235955527745
+      sewer_asset_sheet_18: 5861528942019707602
+      sewer_asset_sheet_19: -5172129478493455675
+      sewer_asset_sheet_2: 8914576923739860372
+      sewer_asset_sheet_20: -2554939271166336231
+      sewer_asset_sheet_21: -8100572288851433603
+      sewer_asset_sheet_22: -4138127235449841489
+      sewer_asset_sheet_23: -190175934103722802
+      sewer_asset_sheet_24: 7413781506765671793
+      sewer_asset_sheet_25: 7046765595310760739
+      sewer_asset_sheet_3: -9217468899052234133
+      sewer_asset_sheet_4: -228606244081147723
+      sewer_asset_sheet_5: -2717896212522068386
+      sewer_asset_sheet_6: -5924572286784108061
+      sewer_asset_sheet_7: -7814013619186744617
+      sewer_asset_sheet_8: 3238648812376256622
+      sewer_asset_sheet_9: -7460143438635530544
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

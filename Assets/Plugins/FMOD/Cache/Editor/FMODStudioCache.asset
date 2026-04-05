@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Audio/forsaken/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639094646737860687
+  lastModified: 639109048349368888
   FileSizes:
   - Name: Desktop
     Value: 998
@@ -72,7 +72,7 @@ MonoBehaviour:
   - {fileID: 603504957107434765}
   StringsBanks:
   - {fileID: -3891524121795274350}
-  cacheTime: 639094646737860687
+  cacheTime: 639109048349368888
   cacheVersion: 131635
 --- !u!114 &7184290321310997
 MonoBehaviour:
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Assets/Audio/forsaken/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639094646737790215
+  lastModified: 639109048349368888
   FileSizes:
   - Name: Desktop
     Value: 3205120
