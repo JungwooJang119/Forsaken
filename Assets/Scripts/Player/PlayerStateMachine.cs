@@ -275,11 +275,26 @@ public class PlayerStateMachine : StateMachine, IDamageable, ISetDifficulty
         currentState.EnterState();
     }
 
+    
+    private void Update()
+    {
+        if (dialogueUI != null && dialogueUI.IsOpen) return;
+
+        currentState?.UpdateStates();
+
+        jumpPressedThisFrame = false;
+        jumpReleasedThisFrame = false;
+        isDashPressed = false;
+    }
+
+
     protected override void UpdateState()
     {
         if (dialogueUI != null && dialogueUI.IsOpen) return;
 
         currentState.UpdateStates();
+
+        print($"State: {currentState.GetType().Name}  grounded={grounded}  movePressed={isMovementPressed}  xIn={currentMovementInput.x}");
 
         // Reset one frame inputs per update
         jumpPressedThisFrame = false;
@@ -516,11 +531,13 @@ public class PlayerStateMachine : StateMachine, IDamageable, ISetDifficulty
     void OnMovementPerformed(InputAction.CallbackContext context)
     {
         currentMovementInput = context.ReadValue<Vector2>();
+        isMovementPressed = Mathf.Abs(currentMovementInput.x) > inputDeadzone;
     }
 
     void OnMovementCancelled(InputAction.CallbackContext context)
     {
         currentMovementInput = Vector2.zero;
+        isMovementPressed = false;
     }
 
     void OnRunStart(InputAction.CallbackContext context)
@@ -665,41 +682,4 @@ public class PlayerStateMachine : StateMachine, IDamageable, ISetDifficulty
             Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * dir * wallCheckDistance);
         }
     }
-
-
-    // private void HandleMovement()
-    // {
-    //     if (canMove)
-    //     {
-    //         rb.linearVelocity = appliedMovement;
-    //     } else
-    //     {
-    //         rb.AddForce(appliedMovement, ForceMode2D.Impulse);
-    //     }
-    // }
-    
-    // #region Collision Events
-    // public void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Ground"))
-    //     {
-    //         grounded = true;
-    //     } else if (LayerMask.LayerToName(other.gameObject.layer).Equals("Background"))
-    //     {
-    //         hitWall = true;
-    //     }
-    // }
-
-    // public void OnCollisionExit2D(Collision2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Ground"))
-    //     {
-    //         grounded = false;
-    //     } else if (LayerMask.LayerToName(other.gameObject.layer).Equals("Background"))
-    //     {
-    //         hitWall = false;
-    //     }
-    // }
-    // #endregion
-    
 }
