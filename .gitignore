@@ -106,3 +106,7 @@ Forsaken.slnx
 fmod.log
 fmod_editor.log
 Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+
+# DS_Store for Mac
+.DS_Store
+**/.DS_Store
