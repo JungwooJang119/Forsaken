@@ -104,6 +104,13 @@ public class BossStateMachine : StateMachine, IDamageable
         return Time.time >= lastDroneSummon + summonCooldown && curEnemies < numEnemies;
     }
 
+    public bool CanTriggerUltimate()
+    {
+        // make it a smaller chance later
+        // bool lowHp = Health <= (Health * 0.2f);
+        return Health <= (Health * 1f);
+    }
+
 
     public bool InRange()
     {

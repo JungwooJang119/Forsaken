@@ -45,6 +45,11 @@ public class BossIdleState : State
                 {
                     SwitchState(new BossTeleportState(bossContext));
                 }
+                // If stage 3 and ultimate is available, rand chance to ult
+                else if (bossContext.CurrentStage == 3 && bossContext.CanTriggerUltimate() && Random.value < 0.5f)
+                {
+                    SwitchState(new BossUltimateState(bossContext));
+                }
                 // If stage 3 and boss can charged dash, always charged dash
                 else if (randomChance < 0.4f && bossContext.CurrentStage == 3 && bossContext.canDashAttack())
                 {
@@ -58,6 +63,7 @@ public class BossIdleState : State
                     && bossContext.GrappleInRange()
                 )
                 {
+                    bossContext.NextAttack = 4;
                     SwitchState(new BossGrappleState(bossContext));
                 }
                 else if (randomChance < 0.5f)

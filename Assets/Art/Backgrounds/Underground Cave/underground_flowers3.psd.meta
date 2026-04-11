@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 2084b06b8a2524cb5884cdae8b78ef5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7575789032507138785
+    second: underground_flowers3_0
+  - first:
+      213: -5550115837721150605
+    second: underground_flowers3_1
+  - first:
+      213: 2401109033004856520
+    second: underground_flowers3_2
+  - first:
+      213: -3103665286068772804
+    second: underground_flowers3_3
+  - first:
+      213: -3346365299099659157
+    second: underground_flowers3_4
+  - first:
+      213: 9061849759240486958
+    second: underground_flowers3_5
+  - first:
+      213: -8837836101936980824
+    second: underground_flowers3_6
+  - first:
+      213: -813818993068452122
+    second: underground_flowers3_7
+  - first:
+      213: -6224002366775382185
+    second: underground_flowers3_8
+  - first:
+      213: -1530716323668529919
+    second: underground_flowers3_9
+  - first:
+      213: 221144575178380509
+    second: underground_flowers3_10
+  - first:
+      213: -7140537218192366396
+    second: underground_flowers3_11
+  - first:
+      213: 5257670645274330638
+    second: underground_flowers3_12
+  - first:
+      213: -4022988414226648895
+    second: underground_flowers3_13
+  - first:
+      213: 3652929050058117514
+    second: underground_flowers3_14
+  - first:
+      213: 7764114532966379289
+    second: underground_flowers3_15
+  - first:
+      213: -7613518450456924516
+    second: underground_flowers3_16
+  - first:
+      213: -4288266485604266901
+    second: underground_flowers3_17
+  - first:
+      213: -6544807636245772482
+    second: underground_flowers3_18
+  - first:
+      213: -4514895422241816381
+    second: underground_flowers3_19
+  - first:
+      213: -9212763932646978818
+    second: underground_flowers3_20
+  - first:
+      213: -5225307438363437625
+    second: underground_flowers3_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: underground_flowers3_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1428
+        width: 207
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e263ef9cfb922960800000000000000
+      internalID: 7575789032507138785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_1
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1778
+        width: 80
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b7c562d070af2b0800000000000000
+      internalID: -5550115837721150605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_2
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1352
+        width: 312
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c47c33a1f3725120800000000000000
+      internalID: 2401109033004856520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_3
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1906
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30e822cdd09de4d0800000000000000
+      internalID: -3103665286068772804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_4
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1682
+        width: 83
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6498728d725f81d0800000000000000
+      internalID: -3346365299099659157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_5
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 752
+        width: 385
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e200d73285822cd70800000000000000
+      internalID: 9061849759240486958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_6
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1537
+        width: 9
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac5ce0e3e2b95580800000000000000
+      internalID: -8837836101936980824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_7
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1567
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e650b600fbb4b4f0800000000000000
+      internalID: -813818993068452122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_8
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1450
+        width: 23
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fa927d2d6ef99a0800000000000000
+      internalID: -6224002366775382185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_9
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1492
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d68db1d9dc1cae0800000000000000
+      internalID: -1530716323668529919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_10
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 867
+        width: 248
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd41387c1d9a11300800000000000000
+      internalID: 221144575178380509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_11
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 867
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c420347b37b7ec90800000000000000
+      internalID: -7140537218192366396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_12
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 747
+        width: 383
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e064395789ff6f840800000000000000
+      internalID: 5257670645274330638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 690
+        width: 482
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0328a1a597b28c0800000000000000
+      internalID: -4022988414226648895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_14
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 743
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a815b62fd9fc1b230800000000000000
+      internalID: 3652929050058117514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_15
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 738
+        width: 250
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fa8ec180dafbb60800000000000000
+      internalID: 7764114532966379289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 593
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ee1a5be49575690800000000000000
+      internalID: -7613518450456924516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_17
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 504
+        width: 1991
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c485ff9540d74c0800000000000000
+      internalID: -4288266485604266901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 249
+        width: 207
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e378e46712c2c25a0800000000000000
+      internalID: -6544807636245772482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_19
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 304
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c04d3fc88ed751c0800000000000000
+      internalID: -4514895422241816381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_20
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 325
+        width: 676
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efacb0bb300b52080800000000000000
+      internalID: -9212763932646978818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_flowers3_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 81
+        width: 1240
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c51426d19afb77b0800000000000000
+      internalID: -5225307438363437625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      underground_flowers3_0: 7575789032507138785
+      underground_flowers3_1: -5550115837721150605
+      underground_flowers3_10: 221144575178380509
+      underground_flowers3_11: -7140537218192366396
+      underground_flowers3_12: 5257670645274330638
+      underground_flowers3_13: -4022988414226648895
+      underground_flowers3_14: 3652929050058117514
+      underground_flowers3_15: 7764114532966379289
+      underground_flowers3_16: -7613518450456924516
+      underground_flowers3_17: -4288266485604266901
+      underground_flowers3_18: -6544807636245772482
+      underground_flowers3_19: -4514895422241816381
+      underground_flowers3_2: 2401109033004856520
+      underground_flowers3_20: -9212763932646978818
+      underground_flowers3_21: -5225307438363437625
+      underground_flowers3_3: -3103665286068772804
+      underground_flowers3_4: -3346365299099659157
+      underground_flowers3_5: 9061849759240486958
+      underground_flowers3_6: -8837836101936980824
+      underground_flowers3_7: -813818993068452122
+      underground_flowers3_8: -6224002366775382185
+      underground_flowers3_9: -1530716323668529919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
